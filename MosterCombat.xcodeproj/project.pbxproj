@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		B40E6FE11AD77FA200F76266 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E6FE01AD77FA200F76266 /* main.m */; };
 		B40E6FE41AD77FA200F76266 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E6FE31AD77FA200F76266 /* AppDelegate.m */; };
-		B40E6FE71AD77FA200F76266 /* MosterCombat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B40E6FE51AD77FA200F76266 /* MosterCombat.xcdatamodeld */; };
-		B40E6FEA1AD77FA200F76266 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E6FE91AD77FA200F76266 /* ViewController.m */; };
 		B40E6FED1AD77FA200F76266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40E6FEB1AD77FA200F76266 /* Main.storyboard */; };
 		B40E6FEF1AD77FA200F76266 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B40E6FEE1AD77FA200F76266 /* Images.xcassets */; };
 		B40E6FF21AD77FA200F76266 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B40E6FF01AD77FA200F76266 /* LaunchScreen.xib */; };
 		B40E6FFE1AD77FA300F76266 /* MosterCombatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E6FFD1AD77FA300F76266 /* MosterCombatTests.m */; };
+		B40E700B1AD780BA00F76266 /* MCCombat.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E700A1AD780BA00F76266 /* MCCombat.m */; };
+		B40E700E1AD780E000F76266 /* MCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E700D1AD780E000F76266 /* MCMainViewController.m */; };
+		B40E70111AD7810A00F76266 /* MosterCombat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B40E700F1AD7810A00F76266 /* MosterCombat.xcdatamodeld */; };
+		B40E70141AD7815800F76266 /* MCMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70131AD7815800F76266 /* MCMonster.m */; };
+		B40E70171AD7817300F76266 /* MCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70161AD7817300F76266 /* MCPlayer.m */; };
+		B40E701A1AD78F7000F76266 /* MCSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70191AD78F7000F76266 /* MCSkill.m */; };
+		B40E701D1AD79B0A00F76266 /* MCLeveledObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E701C1AD79B0A00F76266 /* MCLeveledObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +38,25 @@
 		B40E6FE01AD77FA200F76266 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B40E6FE21AD77FA200F76266 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B40E6FE31AD77FA200F76266 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B40E6FE61AD77FA200F76266 /* MosterCombat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MosterCombat.xcdatamodel; sourceTree = "<group>"; };
-		B40E6FE81AD77FA200F76266 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B40E6FE91AD77FA200F76266 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B40E6FEC1AD77FA200F76266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B40E6FEE1AD77FA200F76266 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B40E6FF11AD77FA200F76266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B40E6FF71AD77FA300F76266 /* MosterCombatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosterCombatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B40E6FFC1AD77FA300F76266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B40E6FFD1AD77FA300F76266 /* MosterCombatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MosterCombatTests.m; sourceTree = "<group>"; };
+		B40E70091AD780BA00F76266 /* MCCombat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCCombat.h; path = Model/MCCombat.h; sourceTree = "<group>"; };
+		B40E700A1AD780BA00F76266 /* MCCombat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCCombat.m; path = Model/MCCombat.m; sourceTree = "<group>"; };
+		B40E700C1AD780E000F76266 /* MCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMainViewController.h; path = Controllers/MCMainViewController.h; sourceTree = "<group>"; };
+		B40E700D1AD780E000F76266 /* MCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCMainViewController.m; path = Controllers/MCMainViewController.m; sourceTree = "<group>"; };
+		B40E70101AD7810A00F76266 /* MosterCombat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MosterCombat.xcdatamodel; sourceTree = "<group>"; };
+		B40E70121AD7815800F76266 /* MCMonster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCMonster.h; path = Model/MCMonster.h; sourceTree = "<group>"; };
+		B40E70131AD7815800F76266 /* MCMonster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCMonster.m; path = Model/MCMonster.m; sourceTree = "<group>"; };
+		B40E70151AD7817300F76266 /* MCPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCPlayer.h; path = Model/MCPlayer.h; sourceTree = "<group>"; };
+		B40E70161AD7817300F76266 /* MCPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCPlayer.m; path = Model/MCPlayer.m; sourceTree = "<group>"; };
+		B40E70181AD78F7000F76266 /* MCSkill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSkill.h; path = Model/MCSkill.h; sourceTree = "<group>"; };
+		B40E70191AD78F7000F76266 /* MCSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSkill.m; path = Model/MCSkill.m; sourceTree = "<group>"; };
+		B40E701B1AD79B0A00F76266 /* MCLeveledObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCLeveledObject.h; path = Model/MCLeveledObject.h; sourceTree = "<group>"; };
+		B40E701C1AD79B0A00F76266 /* MCLeveledObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCLeveledObject.m; path = Model/MCLeveledObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +98,11 @@
 		B40E6FDD1AD77FA200F76266 /* MosterCombat */ = {
 			isa = PBXGroup;
 			children = (
+				B40E6FEB1AD77FA200F76266 /* Main.storyboard */,
 				B40E6FE21AD77FA200F76266 /* AppDelegate.h */,
 				B40E6FE31AD77FA200F76266 /* AppDelegate.m */,
-				B40E6FE81AD77FA200F76266 /* ViewController.h */,
-				B40E6FE91AD77FA200F76266 /* ViewController.m */,
-				B40E6FEB1AD77FA200F76266 /* Main.storyboard */,
+				B40E70071AD7805900F76266 /* Model */,
+				B40E70081AD7806C00F76266 /* Controllers */,
 				B40E6FDE1AD77FA200F76266 /* Supporting Files */,
 			);
 			path = MosterCombat;
@@ -98,7 +113,6 @@
 			children = (
 				B40E6FEE1AD77FA200F76266 /* Images.xcassets */,
 				B40E6FF01AD77FA200F76266 /* LaunchScreen.xib */,
-				B40E6FE51AD77FA200F76266 /* MosterCombat.xcdatamodeld */,
 				B40E6FDF1AD77FA200F76266 /* Info.plist */,
 				B40E6FE01AD77FA200F76266 /* main.m */,
 			);
@@ -120,6 +134,33 @@
 				B40E6FFC1AD77FA300F76266 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B40E70071AD7805900F76266 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B40E701B1AD79B0A00F76266 /* MCLeveledObject.h */,
+				B40E701C1AD79B0A00F76266 /* MCLeveledObject.m */,
+				B40E70181AD78F7000F76266 /* MCSkill.h */,
+				B40E70191AD78F7000F76266 /* MCSkill.m */,
+				B40E70121AD7815800F76266 /* MCMonster.h */,
+				B40E70131AD7815800F76266 /* MCMonster.m */,
+				B40E70151AD7817300F76266 /* MCPlayer.h */,
+				B40E70161AD7817300F76266 /* MCPlayer.m */,
+				B40E70091AD780BA00F76266 /* MCCombat.h */,
+				B40E700A1AD780BA00F76266 /* MCCombat.m */,
+				B40E700F1AD7810A00F76266 /* MosterCombat.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B40E70081AD7806C00F76266 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B40E700C1AD780E000F76266 /* MCMainViewController.h */,
+				B40E700D1AD780E000F76266 /* MCMainViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,10 +263,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B40E6FE71AD77FA200F76266 /* MosterCombat.xcdatamodeld in Sources */,
+				B40E70171AD7817300F76266 /* MCPlayer.m in Sources */,
+				B40E700E1AD780E000F76266 /* MCMainViewController.m in Sources */,
 				B40E6FE41AD77FA200F76266 /* AppDelegate.m in Sources */,
-				B40E6FEA1AD77FA200F76266 /* ViewController.m in Sources */,
+				B40E701A1AD78F7000F76266 /* MCSkill.m in Sources */,
+				B40E70141AD7815800F76266 /* MCMonster.m in Sources */,
+				B40E700B1AD780BA00F76266 /* MCCombat.m in Sources */,
 				B40E6FE11AD77FA200F76266 /* main.m in Sources */,
+				B40E70111AD7810A00F76266 /* MosterCombat.xcdatamodeld in Sources */,
+				B40E701D1AD79B0A00F76266 /* MCLeveledObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,13 +476,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B40E6FE51AD77FA200F76266 /* MosterCombat.xcdatamodeld */ = {
+		B40E700F1AD7810A00F76266 /* MosterCombat.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B40E6FE61AD77FA200F76266 /* MosterCombat.xcdatamodel */,
+				B40E70101AD7810A00F76266 /* MosterCombat.xcdatamodel */,
 			);
-			currentVersion = B40E6FE61AD77FA200F76266 /* MosterCombat.xcdatamodel */;
-			path = MosterCombat.xcdatamodeld;
+			currentVersion = B40E70101AD7810A00F76266 /* MosterCombat.xcdatamodel */;
+			name = MosterCombat.xcdatamodeld;
+			path = Model/MosterCombat.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
