@@ -20,6 +20,7 @@
 		B40E70171AD7817300F76266 /* MCPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70161AD7817300F76266 /* MCPlayer.m */; };
 		B40E701A1AD78F7000F76266 /* MCSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70191AD78F7000F76266 /* MCSkill.m */; };
 		B40E701D1AD79B0A00F76266 /* MCLeveledObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E701C1AD79B0A00F76266 /* MCLeveledObject.m */; };
+		B40E70201AD7B41000F76266 /* MCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E701F1AD7B41000F76266 /* MCItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		B40E70191AD78F7000F76266 /* MCSkill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSkill.m; path = Model/MCSkill.m; sourceTree = "<group>"; };
 		B40E701B1AD79B0A00F76266 /* MCLeveledObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCLeveledObject.h; path = Model/MCLeveledObject.h; sourceTree = "<group>"; };
 		B40E701C1AD79B0A00F76266 /* MCLeveledObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCLeveledObject.m; path = Model/MCLeveledObject.m; sourceTree = "<group>"; };
+		B40E701E1AD7B41000F76266 /* MCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCItem.h; path = Model/MCItem.h; sourceTree = "<group>"; };
+		B40E701F1AD7B41000F76266 /* MCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCItem.m; path = Model/MCItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				B40E70161AD7817300F76266 /* MCPlayer.m */,
 				B40E70091AD780BA00F76266 /* MCCombat.h */,
 				B40E700A1AD780BA00F76266 /* MCCombat.m */,
+				B40E701E1AD7B41000F76266 /* MCItem.h */,
+				B40E701F1AD7B41000F76266 /* MCItem.m */,
 				B40E700F1AD7810A00F76266 /* MosterCombat.xcdatamodeld */,
 			);
 			name = Model;
@@ -267,6 +272,7 @@
 				B40E700E1AD780E000F76266 /* MCMainViewController.m in Sources */,
 				B40E6FE41AD77FA200F76266 /* AppDelegate.m in Sources */,
 				B40E701A1AD78F7000F76266 /* MCSkill.m in Sources */,
+				B40E70201AD7B41000F76266 /* MCItem.m in Sources */,
 				B40E70141AD7815800F76266 /* MCMonster.m in Sources */,
 				B40E700B1AD780BA00F76266 /* MCCombat.m in Sources */,
 				B40E6FE11AD77FA200F76266 /* main.m in Sources */,

@@ -10,9 +10,6 @@
 
 @interface MCLeveledObject()
 
-@property (nonatomic, readwrite) NSInteger level;
-@property (nonatomic, readwrite) NSInteger experience;
-
 @end
 
 @implementation MCLeveledObject
@@ -21,19 +18,19 @@
 {
     self = [super init];
     if (self) {
-        self.level = 1;
-        self.experience = 0;
+        _level = 1;
+        _experience = 0;
     }
     return self;
 }
 
 - (void)gainExperience:(NSInteger)experience
 {
-    self.experience += experience;
+    _experience += experience;
     NSInteger experienceToGainLevel = self.level * self.level * self.level;
     if (self.experience >= experienceToGainLevel) {
-        self.level++;
-        self.experience -= experienceToGainLevel;
+        _level++;
+        _experience -= experienceToGainLevel;
     }
 }
 

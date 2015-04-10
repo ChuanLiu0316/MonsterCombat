@@ -20,8 +20,8 @@
 {
     self = [super init];
     if (self) {
-        self.name = name;
-        self.monsters = [[NSMutableArray alloc] initWithCapacity:0];
+        _name = name;
+        _monsters = [[NSMutableArray alloc] initWithCapacity:0];
     }
     return self;
 }

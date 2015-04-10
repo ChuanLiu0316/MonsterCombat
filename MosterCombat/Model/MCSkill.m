@@ -10,16 +10,6 @@
 
 @interface MCSkill()
 
-@property (nonatomic, readwrite) NSString *name;
-@property (nonatomic, readwrite) MCElement element;
-
-@property (nonatomic, readwrite) NSInteger damage;
-@property (nonatomic, readwrite) NSInteger consumption;
-@property (nonatomic, readwrite) NSInteger speed;
-
-@property (nonatomic, readwrite) NSSet *targetSet; // contains MCTarget
-@property (nonatomic, readwrite) NSInteger targetNumber;
-
 @end
 
 @implementation MCSkill
@@ -35,13 +25,13 @@
 {
     self = [super init];
     if (self) {
-        self.name = name;
-        self.element = element;
-        self.damage = damage;
-        self.speed = speed;
-        self.consumption = consumption;
-        self.targetSet = targetSet;
-        self.targetNumber = targetNumber;
+        _name = name;
+        _element = element;
+        _damage = damage;
+        _speed = speed;
+        _consumption = consumption;
+        _targetSet = targetSet;
+        _targetNumber = targetNumber;
     }
     return self;
 }

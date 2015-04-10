@@ -14,14 +14,6 @@
 /* Dictionary that keeps track of all skills */
 @property (nonatomic) NSMutableArray *skillSet; // contains MCSkill
 
-/* Battle Properties */
-@property (nonatomic, readwrite) NSInteger magicPoints;
-@property (nonatomic, readwrite) NSInteger hitPoints;
-@property (nonatomic, readwrite) BOOL alive;
-@property (nonatomic, readwrite) NSInteger speed;
-
-/* Off-Battle Properties */
-
 @end
 
 @implementation MCMonster
@@ -34,11 +26,11 @@
 {
     self = [super init];
     if (self) {
-        self.name = name;
-        self.hitPoints = hitPoints;
-        self.magicPoints = magicPoints;
-        self.speed = speed;
-        self.skillSet = [[NSMutableArray alloc] initWithCapacity:0];
+        _name = name;
+        _hitPoints = hitPoints;
+        _magicPoints = magicPoints;
+        _speed = speed;
+        _skillSet = [[NSMutableArray alloc] initWithCapacity:0];
     }
     return self;
 }
@@ -47,14 +39,14 @@
 
 - (void)damage:(NSInteger)damage
 {
-    self.hitPoints -= damage;
+    _hitPoints -= damage;
     if (self.hitPoints <= 0)
         [self setDead];
 }
 
 - (void)setDead
 {
-    self.alive = NO;
+    _alive = NO;
 }
 
 #pragma mark - Off-Battle Methods
