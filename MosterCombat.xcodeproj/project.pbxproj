@@ -88,9 +88,6 @@
 				B40E6FE81AD77FA200F76266 /* ViewController.h */,
 				B40E6FE91AD77FA200F76266 /* ViewController.m */,
 				B40E6FEB1AD77FA200F76266 /* Main.storyboard */,
-				B40E6FEE1AD77FA200F76266 /* Images.xcassets */,
-				B40E6FF01AD77FA200F76266 /* LaunchScreen.xib */,
-				B40E6FE51AD77FA200F76266 /* MosterCombat.xcdatamodeld */,
 				B40E6FDE1AD77FA200F76266 /* Supporting Files */,
 			);
 			path = MosterCombat;
@@ -99,6 +96,9 @@
 		B40E6FDE1AD77FA200F76266 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B40E6FEE1AD77FA200F76266 /* Images.xcassets */,
+				B40E6FF01AD77FA200F76266 /* LaunchScreen.xib */,
+				B40E6FE51AD77FA200F76266 /* MosterCombat.xcdatamodeld */,
 				B40E6FDF1AD77FA200F76266 /* Info.plist */,
 				B40E6FE01AD77FA200F76266 /* main.m */,
 			);
