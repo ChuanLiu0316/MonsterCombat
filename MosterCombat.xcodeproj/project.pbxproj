@@ -24,6 +24,7 @@
 		B40E70361AD7C04E00F76266 /* MCSkillBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70311AD7C04E00F76266 /* MCSkillBuff.m */; };
 		B40E70371AD7C04E00F76266 /* MCSkillDamage.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70331AD7C04E00F76266 /* MCSkillDamage.m */; };
 		B40E70381AD7C04E00F76266 /* MCSkillRestore.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70351AD7C04E00F76266 /* MCSkillRestore.m */; };
+		B43447C61AD82F4B00CA9B49 /* MCElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B43447C51AD82F4B00CA9B49 /* MCElement.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,9 @@
 		B40E70331AD7C04E00F76266 /* MCSkillDamage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSkillDamage.m; path = Model/MCSkillDamage.m; sourceTree = "<group>"; };
 		B40E70341AD7C04E00F76266 /* MCSkillRestore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSkillRestore.h; path = Model/MCSkillRestore.h; sourceTree = "<group>"; };
 		B40E70351AD7C04E00F76266 /* MCSkillRestore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSkillRestore.m; path = Model/MCSkillRestore.m; sourceTree = "<group>"; };
+		B43447C31AD82DBA00CA9B49 /* MCConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MCConstants.h; path = Model/MCConstants.h; sourceTree = "<group>"; };
+		B43447C41AD82F4B00CA9B49 /* MCElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCElement.h; path = Model/MCElement.h; sourceTree = "<group>"; };
+		B43447C51AD82F4B00CA9B49 /* MCElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCElement.m; path = Model/MCElement.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 			children = (
 				B40E70091AD780BA00F76266 /* MCCombat.h */,
 				B40E700A1AD780BA00F76266 /* MCCombat.m */,
+				B43447C71AD830A700CA9B49 /* Basics */,
 				B40E703B1AD7C09F00F76266 /* LeveledObjects */,
 				B40E70391AD7C07F00F76266 /* Skills */,
 				B40E703A1AD7C08E00F76266 /* Items */,
@@ -205,6 +210,16 @@
 				B40E70161AD7817300F76266 /* MCPlayer.m */,
 			);
 			name = LeveledObjects;
+			sourceTree = "<group>";
+		};
+		B43447C71AD830A700CA9B49 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				B43447C31AD82DBA00CA9B49 /* MCConstants.h */,
+				B43447C41AD82F4B00CA9B49 /* MCElement.h */,
+				B43447C51AD82F4B00CA9B49 /* MCElement.m */,
+			);
+			name = Basics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +326,7 @@
 				B40E700E1AD780E000F76266 /* MCMainViewController.m in Sources */,
 				B40E70381AD7C04E00F76266 /* MCSkillRestore.m in Sources */,
 				B40E6FE41AD77FA200F76266 /* AppDelegate.m in Sources */,
+				B43447C61AD82F4B00CA9B49 /* MCElement.m in Sources */,
 				B40E701A1AD78F7000F76266 /* MCSkill.m in Sources */,
 				B40E70201AD7B41000F76266 /* MCItem.m in Sources */,
 				B40E70361AD7C04E00F76266 /* MCSkillBuff.m in Sources */,
@@ -512,6 +528,7 @@
 				B40E70031AD77FA300F76266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B40E70041AD77FA300F76266 /* Build configuration list for PBXNativeTarget "MosterCombatTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +537,7 @@
 				B40E70061AD77FA300F76266 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

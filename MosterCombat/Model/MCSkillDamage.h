@@ -9,24 +9,17 @@
 #import "MCSkill.h"
 
 @class MCMonster;
+@class MCElement;
 
 @interface MCSkillDamage : MCSkill
 
-typedef enum {
-    FIRE,
-    WIND,
-    WATER,
-    EARTH,
-    LIGHTNING
-} MCElement;
-
-@property (nonatomic, readonly) MCElement element;
+@property (nonatomic, readonly) MCElement *element;
 
 @property (nonatomic, readonly) NSInteger damage;
 
 /* Designated Initializer */
 - (id)initWithName:(NSString *)name
-           element:(MCElement)element
+           element:(MCElement *)element
              speed:(NSInteger)speed
             damage:(NSInteger)damage
        consumption:(NSInteger)consumption

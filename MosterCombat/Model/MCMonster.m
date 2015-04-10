@@ -13,6 +13,7 @@
 
 /* Dictionary that keeps track of all skills */
 @property (nonatomic) NSMutableArray *skillSet; // contains MCSkill
+@property (nonatomic) NSMutableSet *elementSet;
 
 @end
 
@@ -23,6 +24,7 @@
          hitPoints:(NSInteger)hitPoints
        magicPoints:(NSInteger)magicPoints
              speed:(NSInteger)speed
+           element:(MCElement *)element
 {
     self = [super init];
     if (self) {
@@ -31,6 +33,8 @@
         _magicPoints = magicPoints;
         _speed = speed;
         _skillSet = [[NSMutableArray alloc] initWithCapacity:0];
+        _elementSet = [[NSMutableSet alloc] initWithCapacity:0];
+        [_elementSet addObject:element];
     }
     return self;
 }

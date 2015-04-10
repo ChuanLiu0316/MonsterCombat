@@ -17,7 +17,7 @@
 
 /* Designated Initializer */
 - (id)initWithName:(NSString *)name
-           element:(MCElement)element
+           element:(MCElement *)element
              speed:(NSInteger)speed
             damage:(NSInteger)damage
        consumption:(NSInteger)consumption

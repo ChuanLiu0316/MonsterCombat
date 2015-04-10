@@ -11,11 +11,6 @@
 
 @interface MCSkill : MCLeveledObject
 
-typedef enum {
-    SELF,
-    OTHER
-} MCTarget;
-
 @property (nonatomic, readonly) NSString *name;
 
 @property (nonatomic, readonly) NSInteger consumption;

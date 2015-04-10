@@ -10,6 +10,7 @@
 #import "MCLeveledObject.h"
 
 @class MCSkill;
+@class MCElement;
 
 @interface MCMonster : MCLeveledObject
 
@@ -26,7 +27,8 @@
 - (id)initWithName:(NSString *)name
          hitPoints:(NSInteger)hitPoints
        magicPoints:(NSInteger)magicPoints
-             speed:(NSInteger)speed;
+             speed:(NSInteger)speed
+           element:(MCElement *)element;
 
 /* Battle Methods */
 - (void)damage:(NSInteger)damage;
