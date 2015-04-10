@@ -12,22 +12,12 @@
 @interface MCSkill : MCLeveledObject
 
 typedef enum {
-    FIRE,
-    WIND,
-    WATER,
-    EARTH,
-    LIGHTNING
-} MCElement;
-
-typedef enum {
     SELF,
     OTHER
 } MCTarget;
 
 @property (nonatomic, readonly) NSString *name;
-@property (nonatomic, readonly) MCElement element;
 
-@property (nonatomic, readonly) NSInteger damage;
 @property (nonatomic, readonly) NSInteger consumption;
 @property (nonatomic, readonly) NSInteger speed;
 
@@ -36,8 +26,6 @@ typedef enum {
 
 /* Designated Initializer */
 - (id)initWithName:(NSString *)name
-           element:(MCElement)element
-          hpDamage:(NSInteger)damage
              speed:(NSInteger)speed
      mpConsumption:(NSInteger)consumption
          targetSet:(NSSet *)targetSet

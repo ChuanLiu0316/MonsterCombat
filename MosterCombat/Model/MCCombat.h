@@ -7,15 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MCMonster.h"
-#import "MCSkill.h"
+
+@class MCSkill;
+@class MCSkillDamage;
+@class MCMonster;
 
 @interface MCCombat : NSObject
 
 /* Method for Determining Precision */
-- (double)precisionForSkill:(MCSkill *)skill
+- (double)precisionForSkill:(MCSkillDamage *)skill
                   ofMonster:(MCMonster *)monster;
 
+- (NSInteger)damageCombineSkill:(MCSkillDamage *)skill
+                     extraSkill:(MCSkillDamage *)extraSkill;
+
+/* Main Combat Methods */
 - (void)monster:(MCMonster *)monster
        useSkill:(MCSkill *)skill
   againstTarget:(MCMonster *)target
@@ -34,6 +40,6 @@
 - (void)monsters:(NSSet *)monsters
        useSkills:(NSSet *)combinedSkills
   againstTargets:(NSSet *)targetSet
-   reverseSkills:(MCSkill *)reverseSkillSet;
+   reverseSkills:(NSSet *)reverseSkillSet;
 
 @end

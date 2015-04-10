@@ -16,8 +16,6 @@
 
 /* Designated Initializer for skill */
 - (id)initWithName:(NSString *)name
-           element:(MCElement)element
-          hpDamage:(NSInteger)damage
              speed:(NSInteger)speed
      mpConsumption:(NSInteger)consumption
          targetSet:(NSSet *)targetSet
@@ -26,8 +24,6 @@
     self = [super init];
     if (self) {
         _name = name;
-        _element = element;
-        _damage = damage;
         _speed = speed;
         _consumption = consumption;
         _targetSet = targetSet;

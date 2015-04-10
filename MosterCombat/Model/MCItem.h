@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MCMonster.h"
+
+@class MCMonster;
 
 @interface MCItem : NSObject
 
@@ -17,6 +18,6 @@
 - (id)initWithName:(NSString *)name
            purpose:(NSString *)purpose;
 
-- (void)actionForTarget:(MCMonster *)target;
+- (void)use:(MCMonster *)target;
 
 @end

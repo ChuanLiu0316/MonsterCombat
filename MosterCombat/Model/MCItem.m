@@ -7,6 +7,7 @@
 //
 
 #import "MCItem.h"
+#import "MCMonster.h"
 
 @interface MCItem()
 
@@ -25,9 +26,9 @@
     return self;
 }
 
-- (void)actionForTarget:(MCMonster *)target
+- (void)use:(MCMonster *)target
 {
-    NSLog(@"Action: %@ for Monster: %@", self.name, target.name);
+    NSLog(@"Action: %@, Target: %@", self.name, target.name);
 }
 
 @end

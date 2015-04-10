@@ -21,6 +21,9 @@
 		B40E701A1AD78F7000F76266 /* MCSkill.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70191AD78F7000F76266 /* MCSkill.m */; };
 		B40E701D1AD79B0A00F76266 /* MCLeveledObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E701C1AD79B0A00F76266 /* MCLeveledObject.m */; };
 		B40E70201AD7B41000F76266 /* MCItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E701F1AD7B41000F76266 /* MCItem.m */; };
+		B40E70361AD7C04E00F76266 /* MCSkillBuff.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70311AD7C04E00F76266 /* MCSkillBuff.m */; };
+		B40E70371AD7C04E00F76266 /* MCSkillDamage.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70331AD7C04E00F76266 /* MCSkillDamage.m */; };
+		B40E70381AD7C04E00F76266 /* MCSkillRestore.m in Sources */ = {isa = PBXBuildFile; fileRef = B40E70351AD7C04E00F76266 /* MCSkillRestore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,12 @@
 		B40E701C1AD79B0A00F76266 /* MCLeveledObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCLeveledObject.m; path = Model/MCLeveledObject.m; sourceTree = "<group>"; };
 		B40E701E1AD7B41000F76266 /* MCItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCItem.h; path = Model/MCItem.h; sourceTree = "<group>"; };
 		B40E701F1AD7B41000F76266 /* MCItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCItem.m; path = Model/MCItem.m; sourceTree = "<group>"; };
+		B40E70301AD7C04E00F76266 /* MCSkillBuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSkillBuff.h; path = Model/MCSkillBuff.h; sourceTree = "<group>"; };
+		B40E70311AD7C04E00F76266 /* MCSkillBuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSkillBuff.m; path = Model/MCSkillBuff.m; sourceTree = "<group>"; };
+		B40E70321AD7C04E00F76266 /* MCSkillDamage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSkillDamage.h; path = Model/MCSkillDamage.h; sourceTree = "<group>"; };
+		B40E70331AD7C04E00F76266 /* MCSkillDamage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSkillDamage.m; path = Model/MCSkillDamage.m; sourceTree = "<group>"; };
+		B40E70341AD7C04E00F76266 /* MCSkillRestore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCSkillRestore.h; path = Model/MCSkillRestore.h; sourceTree = "<group>"; };
+		B40E70351AD7C04E00F76266 /* MCSkillRestore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCSkillRestore.m; path = Model/MCSkillRestore.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,18 +151,11 @@
 		B40E70071AD7805900F76266 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B40E701B1AD79B0A00F76266 /* MCLeveledObject.h */,
-				B40E701C1AD79B0A00F76266 /* MCLeveledObject.m */,
-				B40E70181AD78F7000F76266 /* MCSkill.h */,
-				B40E70191AD78F7000F76266 /* MCSkill.m */,
-				B40E70121AD7815800F76266 /* MCMonster.h */,
-				B40E70131AD7815800F76266 /* MCMonster.m */,
-				B40E70151AD7817300F76266 /* MCPlayer.h */,
-				B40E70161AD7817300F76266 /* MCPlayer.m */,
 				B40E70091AD780BA00F76266 /* MCCombat.h */,
 				B40E700A1AD780BA00F76266 /* MCCombat.m */,
-				B40E701E1AD7B41000F76266 /* MCItem.h */,
-				B40E701F1AD7B41000F76266 /* MCItem.m */,
+				B40E703B1AD7C09F00F76266 /* LeveledObjects */,
+				B40E70391AD7C07F00F76266 /* Skills */,
+				B40E703A1AD7C08E00F76266 /* Items */,
 				B40E700F1AD7810A00F76266 /* MosterCombat.xcdatamodeld */,
 			);
 			name = Model;
@@ -166,6 +168,43 @@
 				B40E700D1AD780E000F76266 /* MCMainViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B40E70391AD7C07F00F76266 /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				B40E70181AD78F7000F76266 /* MCSkill.h */,
+				B40E70191AD78F7000F76266 /* MCSkill.m */,
+				B40E70321AD7C04E00F76266 /* MCSkillDamage.h */,
+				B40E70331AD7C04E00F76266 /* MCSkillDamage.m */,
+				B40E70301AD7C04E00F76266 /* MCSkillBuff.h */,
+				B40E70311AD7C04E00F76266 /* MCSkillBuff.m */,
+				B40E70341AD7C04E00F76266 /* MCSkillRestore.h */,
+				B40E70351AD7C04E00F76266 /* MCSkillRestore.m */,
+			);
+			name = Skills;
+			sourceTree = "<group>";
+		};
+		B40E703A1AD7C08E00F76266 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				B40E701E1AD7B41000F76266 /* MCItem.h */,
+				B40E701F1AD7B41000F76266 /* MCItem.m */,
+			);
+			name = Items;
+			sourceTree = "<group>";
+		};
+		B40E703B1AD7C09F00F76266 /* LeveledObjects */ = {
+			isa = PBXGroup;
+			children = (
+				B40E701B1AD79B0A00F76266 /* MCLeveledObject.h */,
+				B40E701C1AD79B0A00F76266 /* MCLeveledObject.m */,
+				B40E70121AD7815800F76266 /* MCMonster.h */,
+				B40E70131AD7815800F76266 /* MCMonster.m */,
+				B40E70151AD7817300F76266 /* MCPlayer.h */,
+				B40E70161AD7817300F76266 /* MCPlayer.m */,
+			);
+			name = LeveledObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,11 +309,14 @@
 			files = (
 				B40E70171AD7817300F76266 /* MCPlayer.m in Sources */,
 				B40E700E1AD780E000F76266 /* MCMainViewController.m in Sources */,
+				B40E70381AD7C04E00F76266 /* MCSkillRestore.m in Sources */,
 				B40E6FE41AD77FA200F76266 /* AppDelegate.m in Sources */,
 				B40E701A1AD78F7000F76266 /* MCSkill.m in Sources */,
 				B40E70201AD7B41000F76266 /* MCItem.m in Sources */,
+				B40E70361AD7C04E00F76266 /* MCSkillBuff.m in Sources */,
 				B40E70141AD7815800F76266 /* MCMonster.m in Sources */,
 				B40E700B1AD780BA00F76266 /* MCCombat.m in Sources */,
+				B40E70371AD7C04E00F76266 /* MCSkillDamage.m in Sources */,
 				B40E6FE11AD77FA200F76266 /* main.m in Sources */,
 				B40E70111AD7810A00F76266 /* MosterCombat.xcdatamodeld in Sources */,
 				B40E701D1AD79B0A00F76266 /* MCLeveledObject.m in Sources */,
